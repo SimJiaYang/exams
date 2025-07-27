@@ -14,6 +14,18 @@ namespace Q1
         private static PaymentService _paymentService;
         private static OrderService _orderService;
 
+        /**
+         * Program process flow
+         * 1. Service initialization
+         * 2. Create prodct seed
+         * 3. Show selection interface
+         *    - View Products 
+         *    - View Carts
+         *    - Add Product to Cart
+         *    - Remove Product from Cart
+         *    - Checkout
+         *    - Exit
+         */
         static void Main(string[] args)
         {
             InitializeServices();

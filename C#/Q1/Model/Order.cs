@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Q1.Model
 {
+    /**
+     * Order
+     */
     public class Order : BaseEntity<long>
     {
         public string OrderNumber { get; set; }

@@ -24,6 +24,13 @@ namespace Q1.Service
             _orderService = orderService;
         }
 
+        /**
+         * Add product to cart
+         * 
+         * @Param
+         * - Product
+         * - Quantity
+         */
         public void AddToCart(Product product, int quantity)
         {
             var existingItem = _cartItems.FirstOrDefault(item => item.ProductId == product.Id);
@@ -52,6 +59,12 @@ namespace Q1.Service
             }
         }
 
+        /**
+         * Remove Single cart item from cart
+         * 
+         * @Param
+         * - Product Id
+         */
         public bool RemoveFromCart(long productId)
         {
             var itemToRemove = _cartItems.FirstOrDefault(item => item.ProductId == productId);
@@ -63,18 +76,42 @@ namespace Q1.Service
             return false;
         }
 
+        /**
+         * Get all cart items
+         */
         public IEnumerable<CartItem> GetCartItems()
         {
             return _cartItems.AsReadOnly();
         }
 
+        /**
+         * Get cart items total
+         */
         public double GetCartTotal()
         {
             return _cartItems.Sum(item => item.TotalPrice);
         }
 
+        /**
+         * Checkout cart item
+         * 
+         * @Params
+         * - userId
+         * - Payment method
+         * - Shipping address
+         */
         public Order Checkout(string userId, string paymentMethod, string shippingAddress)
         {
+            /**
+             * Process flow
+             * 1. Validate cart got cart items or not
+             * 2. Validate cart item product ID exist or not
+             * 3. Compare cart item quantity with product quantity
+             * 4. Process the payment (Simulate)
+             * 5. Create a new order
+             * 6. Update product quantity (Update product stock)
+             * 7. Clear cart items
+             */
             if (!_cartItems.Any())
                 throw new InvalidOperationException("Cart is empty");
 
@@ -122,6 +159,9 @@ namespace Q1.Service
             return createdOrder;
         }
 
+        /**
+         * Clear cart items
+         */
         public void ClearCart()
         {
             _cartItems.Clear();

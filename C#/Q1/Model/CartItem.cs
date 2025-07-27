@@ -2,6 +2,9 @@
 
 namespace Q1.Model
 {
+    /**
+     * Cart item
+     */
     public class CartItem : BaseEntity<long>
     {
         public string ProductName { get; set; }
@@ -12,6 +15,9 @@ namespace Q1.Model
         public long ProductId { get; set; }
         public string UserId { get; set; }
 
+        /**
+        * Calculate total price per item
+        */
         public double TotalPrice => UnitPrice * Quantity;
     }
 }

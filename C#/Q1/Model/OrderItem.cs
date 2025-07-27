@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Q1.Model
 {
+    /**
+     * Order Item
+     */
     public class OrderItem
     {
         public long ProductId { get; set; }

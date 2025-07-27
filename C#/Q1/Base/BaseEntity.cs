@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Q1.Base
 {
+    /**
+     * Model base entity
+     */
     public class BaseEntity<T>
     {
         public T Id { get; set; }

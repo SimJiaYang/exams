@@ -3,6 +3,9 @@ using System;
 
 namespace Q1.Model
 {
+    /**
+     * Product
+     */
     public class Product : BaseEntity<long>
     {
         public string Name { get; set; }

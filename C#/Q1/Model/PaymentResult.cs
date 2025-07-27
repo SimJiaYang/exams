@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Q1.Model
 {
+    /**
+     * Payment Result
+     */
     public class PaymentResult
     {
         public bool Success { get; set; }

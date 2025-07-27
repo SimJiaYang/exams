@@ -11,6 +11,12 @@ namespace Q1.Service
     {
         private long _nextOrderId = 1;
 
+        /**
+         * Create new order
+         * 
+         * @Param
+         * - Order item
+         */
         public Order CreateOrder(Order order)
         {
             order.Id = _nextOrderId++;

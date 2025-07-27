@@ -9,6 +9,13 @@ namespace Q1.Service
 {
     public class PaymentService
     {
+        /**
+         * Proceed Payment
+         * 
+         * @Param
+         * - Amount
+         * - Payment Method (Gateway)
+         */
         public PaymentResult ProcessPayment(double amount, string paymentMethod)
         {
             Console.WriteLine($"Processing {paymentMethod} payment for ${amount}...");
