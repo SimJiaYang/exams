@@ -1,0 +1,7 @@
+C:\Users\user\Downloads\JOB Application MQ\exams\C#\Q2\bin\Debug\Q2.exe.config
+C:\Users\user\Downloads\JOB Application MQ\exams\C#\Q2\bin\Debug\Q2.exe
+C:\Users\user\Downloads\JOB Application MQ\exams\C#\Q2\bin\Debug\Q2.pdb
+C:\Users\user\Downloads\JOB Application MQ\exams\C#\Q2\obj\Debug\Q2.csproj.AssemblyReference.cache
+C:\Users\user\Downloads\JOB Application MQ\exams\C#\Q2\obj\Debug\Q2.csproj.CoreCompileInputs.cache
+C:\Users\user\Downloads\JOB Application MQ\exams\C#\Q2\obj\Debug\Q2.exe
+C:\Users\user\Downloads\JOB Application MQ\exams\C#\Q2\obj\Debug\Q2.pdb
