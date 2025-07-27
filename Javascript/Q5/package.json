@@ -1,0 +1,14 @@
+{
+  "name": "q5",
+  "version": "1.0.0",
+  "main": "Q5.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "date-holidays": "^3.24.4"
+  }
+}
